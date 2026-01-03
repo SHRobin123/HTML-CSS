@@ -1,4 +1,32 @@
-nav {
+  /* ================= RESET ================= */
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         html {
+            scroll-behavior: smooth;
+        }
+
+         body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f5f7fb;
+            color: #333;
+           
+        }
+
+         /* ================= VARIABLES ================= */
+        :root {
+            --primary: #4f46e5;
+            --secondary: #6366f1;
+            --dark: #0f172a;
+            --light: #ffffff;
+            --gray: #64748b;
+        }
+
+          /* ================= NAVBAR ================= */
+          nav {
             position: fixed;
             top: 0;
             width: 100%;
@@ -7,7 +35,7 @@ nav {
             z-index: 1000;
         }
 
-        .nav-container {
+         .nav-container {
             max-width: 1200px;
             margin: auto;
             padding: 15px 20px;
@@ -15,26 +43,8 @@ nav {
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
             font-size: 22px;
             font-weight: bold;
-            color: var(--primary);
-        }
-
-        nav ul {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
             color: var(--primary);
         }
